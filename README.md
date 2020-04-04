@@ -60,7 +60,7 @@ pm2 start index.js
 
 [NGNİX KURULUM](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
 
-cd etc/nginx/sites-enabled/ dizinindeki default dosyamızı aşağıdaki gibi yapılandırıyoruz.  service nginx restart Nginx’i yeniden başlatmayı unutmayalım.
+cd etc/nginx/sites-enabled/ dizinindeki default dosyamızı aşağıdaki gibi yapılandırıyoruz.  Nginx’i yeniden başlatmayı unutmayalım.
 
 ```bash
 upstream coreapp {
@@ -75,4 +75,8 @@ server {
             proxy_pass http://coreapp;
         }
 }
+```
+
+```bash
+ service nginx restart
 ```
