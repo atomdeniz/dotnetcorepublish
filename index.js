@@ -1,8 +1,10 @@
 const crypto = require('crypto')
 const express = require('express')
 const bodyParser = require('body-parser')
-const shellExec = require('shell-exec')
+const shell = require('shelljs')
 const dotenv = require('dotenv');
+const shellExec = require('shell-exec')
+
 dotenv.config();
 
 const secret = process.env.SECRET;
@@ -28,16 +30,10 @@ function verifyPostData(req, res, next) {
 }
 
 app.post('/webhook', verifyPostData, function (req, res) {
-    
     const event = req.get(sigHeaderEventName) || ''
     if (event == 'push') {  
-        res.status(200).send('Request body was signed')
-        shellExec('cp ../Dockerfile ./Dockerfile').then(
-            shellExec('cp ../docker-compose.yml ./docker-compose.yml').then(
-                shellExec('sh publish.sh').then().catch(console.log)
-            ).catch(console.log)
-        ).catch(console.log)
-        // shell.exec('../publish.sh')
+        // shell.exec('. ./publish.sh')
+        shellExec('. ./publish.sh').then(console.log).catch(console.log)
     } else {
         res.status(200).send('Request body was signed')
     }
