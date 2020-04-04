@@ -1,10 +1,9 @@
 const crypto = require('crypto')
 const express = require('express')
 const bodyParser = require('body-parser')
-const argv = require('yargs').argv
 const shell = require('shelljs')
 
-const secret = argv.secret;
+const secret = process.env.secret;
 
 const sigHeaderName = 'X-Hub-Signature'
 const sigHeaderEventName = 'X-GitHub-Event'
