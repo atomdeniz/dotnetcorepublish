@@ -2,10 +2,10 @@ const crypto = require('crypto')
 const express = require('express')
 const bodyParser = require('body-parser')
 const shell = require('shelljs')
+const dotenv = require('dotenv');
+dotenv.config();
 
-const secret = process.env.secret;
-
-const sigHeaderName = 'X-Hub-Signature'
+const secret = process.env.SECRET;
 const sigHeaderEventName = 'X-GitHub-Event'
 
 const app = express()
