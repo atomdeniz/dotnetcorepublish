@@ -6,6 +6,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const secret = process.env.SECRET;
+const sigHeaderName = 'X-Hub-Signature'
 const sigHeaderEventName = 'X-GitHub-Event'
 
 const app = express()
