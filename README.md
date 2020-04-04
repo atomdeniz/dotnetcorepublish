@@ -1,6 +1,7 @@
 # Dotnet Core Publish
 
 Her git comittinde projenizi pull edip, build eden ve docker compose ile yayınlayan uygulama
+Not: Projenize docker-compose ve dockerfile eklemeyi unutmayın
 
 ## Github bilgilerini kayıt etme
 Mevcut projenizin dosya yoluna giriniz.
@@ -40,7 +41,7 @@ nano .env
 ```bash
 SECRET=buraya şifre 
 ```
-şekilinde dosyayı giriniz. Ctrl + X çıkış
+şekilinde dosyayı kaydediniz.
 
 ### Pm2 yükleme
 
