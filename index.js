@@ -30,7 +30,7 @@ function verifyPostData(req, res, next) {
 app.post('/webhook', verifyPostData, function (req, res) {
     const event = req.get(sigHeaderEventName) || ''
     if (event == 'push') {  
-        shell.exec('../publish.sh')
+        shell.exec('sudo ../publish.sh')
     } else {
         res.status(200).send('Request body was signed')
     }
