@@ -5,6 +5,14 @@ set -o nounset
 
 IFS=$(printf '\n\t')
 
+# Nodejs
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
+	&& sudo apt install nodejs \
+	&& printf '\nNodejs installed successfully\n\n'
+
+# Npm install
+npm install
+
 # Docker
 sudo apt remove --yes docker docker-engine docker.io containerd runc \
     && sudo apt update \
