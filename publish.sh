@@ -1,5 +1,6 @@
 #!/bin/sh
-
+cd ../
+eval "$@"
 set -o errexit
 set -o nounset
 
