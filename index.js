@@ -32,7 +32,7 @@ app.post('/webhook', verifyPostData, function (req, res) {
     if (event == 'push') {  
         shellExec('cp ../Dockerfile ./Dockerfile').then(
             shellExec('cp ../docker-compose.yml ./docker-compose.yml').then(
-                shellExec('sh publish.sh').then().catch(console.log)
+                shellExec('sh publish.sh').then(res.status(200).send('Request body was signed')).catch(console.log)
             ).catch(console.log)
         ).catch(console.log)
         // shell.exec('../publish.sh')
