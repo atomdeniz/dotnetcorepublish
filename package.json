@@ -1,5 +1,5 @@
 {
-  "name": "dotnet core publish",
+  "name": "dotnet-core-publish",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
