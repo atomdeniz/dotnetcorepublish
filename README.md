@@ -47,7 +47,7 @@ SECRET=buraya şifre
 Nodejs'in arkaplanda çalışmasını sağlayan bir sistemdir.
 
 ```bash
-pm2 install -g
+npm install pm2 -g
 ```
 
 ### Kodumuzu çalıştırma 
