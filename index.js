@@ -1,7 +1,7 @@
 const crypto = require('crypto')
 const express = require('express')
 const bodyParser = require('body-parser')
-const shell = require('shelljs')
+const shellExec = require('shell-exec')
 const dotenv = require('dotenv');
 dotenv.config();
 
