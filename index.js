@@ -33,7 +33,7 @@ app.post('/webhook', verifyPostData, function (req, res) {
     const event = req.get(sigHeaderEventName) || ''
     if (event == 'push') {  
         // shell.exec('. ./publish.sh')
-        shellExec('. ./publish.sh').then(console.log).catch(console.log)
+        shellExec('../publish.sh').then(console.log).catch(console.log)
     } else {
         res.status(200).send('Request body was signed')
     }
