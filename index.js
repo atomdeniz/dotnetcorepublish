@@ -30,7 +30,12 @@ function verifyPostData(req, res, next) {
 app.post('/webhook', verifyPostData, function (req, res) {
     const event = req.get(sigHeaderEventName) || ''
     if (event == 'push') {  
-        shell.exec('../publish.sh')
+        shellExec('cp ../Dockerfile ./Dockerfile').then(
+            shellExec('cp ../docker-compose.yml ./docker-compose.yml').then(
+                shellExec('sh publish.sh').then().catch(console.log)
+            ).catch(console.log)
+        ).catch(console.log)
+        // shell.exec('../publish.sh')
     } else {
         res.status(200).send('Request body was signed')
     }
