@@ -34,6 +34,7 @@ app.post('/webhook', verifyPostData, function (req, res) {
     if (event == 'push') {  
         // shell.exec('. ./publish.sh')
         res.status(200).send('Publish started')
+        console.log("istek geldi");
         shellExec('sh publish.sh').then(console.log).catch(console.log)
     } else {
         res.status(200).send('Request body was signed')
