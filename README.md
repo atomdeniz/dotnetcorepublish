@@ -12,18 +12,18 @@ Bunun için iki yöntem var.
 
 2. Yöntem ise kullanıcı şifre ve kullanıcı adını bilgisayara kayıt eder.
 
-Mevcut projenizin dosya yoluna giriniz.
-
-```bash
-git config --global credential.helper store
-```
-bu satırı çalıştırın ve
-
-```bash
-git pull
-```
-işlemi ile mevcut projenizi tekrar çekin. 
-Bu sayede github bilgileriniz mevcut makineye kaydedildi.
+ Mevcut projenizin dosya yoluna giriniz.
+ 
+ ```bash
+ git config --global credential.helper store
+ ```
+ bu satırı çalıştırın ve
+ 
+ ```bash
+ git pull
+ ```
+ işlemi ile mevcut projenizi tekrar çekin. 
+ Bu sayede github bilgileriniz mevcut makineye kaydedildi.
 
 
 ## Kurulum
