@@ -8,22 +8,24 @@ Not: Projenize [docker-compose](https://gist.github.com/atomdeniz/9f8211d07135ad
 
 Bunun için iki yöntem var.
 
-**Birinci Yöntem** ile [deploy key](https://gist.github.com/zhujunsan/a0becf82ade50ed06115) oluşturarak kullanıcı bağımsız clone ve pull işlemleri yapabilirsiniz.
+### Birinci Yöntem
+[Deploy key](https://gist.github.com/zhujunsan/a0becf82ade50ed06115) oluşturarak kullanıcı bağımsız clone ve pull işlemleri yapabilirsiniz.
 
-**İkinci Yöntem** ise kullanıcı şifre ve kullanıcı adını bilgisayara kayıt eder.
+### İkinci Yöntem
+Kullanıcı şifre ve kullanıcı adını bilgisayara kayıt eder.
 
- Mevcut projenizin dosya yoluna giriniz.
- 
- ```bash
- git config --global credential.helper store
- ```
- bu satırı çalıştırın ve
- 
- ```bash
- git pull
- ```
- işlemi ile mevcut projenizi tekrar çekin. 
- Bu sayede github bilgileriniz mevcut makineye kaydedildi.
+Mevcut projenizin dosya yoluna giriniz.
+
+```bash
+git config --global credential.helper store
+```
+bu satırı çalıştırın ve
+
+```bash
+git pull
+```
+işlemi ile mevcut projenizi tekrar çekin. 
+Bu sayede github bilgileriniz mevcut makineye kaydedildi.
 
 
 ## Kurulum
