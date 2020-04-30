@@ -1,7 +1,7 @@
 # Dotnet Core Publish
 
 Her git comittinde projenizi pull edip, build eden ve docker compose ile yayınlayan uygulama
-Not: Projenize docker-compose ve dockerfile eklemeyi unutmayın
+Not: Projenize [docker-compose](https://gist.github.com/atomdeniz/9f8211d07135adb94b56f62d75958d2b) ve [dockerfile](https://lmgtfy.com/?q=dockerfile+for+%20X+program) eklemeyi unutmayın
 
 ## Github bilgilerini kayıt etme
 Mevcut projenizin dosya yoluna giriniz.
