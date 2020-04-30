@@ -59,6 +59,6 @@ pm2 start index.js
 ```
 
 ## Nginx, Domain ve SSL
-https://docs.google.com/document/d/1jlJm0P5PS6XBRrtdsCQfr2UJuwGyAjmV8FZU9UJcNzA/edit?usp=sharing
+[Kurulum Dosyası](https://docs.google.com/document/d/1jlJm0P5PS6XBRrtdsCQfr2UJuwGyAjmV8FZU9UJcNzA/edit?usp=sharing)
 
 
