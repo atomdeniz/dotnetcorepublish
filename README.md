@@ -7,12 +7,11 @@ Not: Projenize [docker-compose](https://gist.github.com/atomdeniz/9f8211d07135ad
 ## Github bilgilerini kayıt etme
 
 Bunun için iki yöntem var.
-Birinci yöntem ile deploy key oluşturarak kullanıcı bağımsız clone ve pull işlemleri yapabilirsiniz.
-İkinci yöntem ise kullanıcı şifre ve kullanıcı adını bilgisayara kayıt eder.
 
-[1.Yöntem](https://gist.github.com/zhujunsan/a0becf82ade50ed06115)
+1. Yöntem ile [deploy key](https://gist.github.com/zhujunsan/a0becf82ade50ed06115) oluşturarak kullanıcı bağımsız clone ve pull işlemleri yapabilirsiniz.
 
-2.Yöntem
+2. Yöntem ise kullanıcı şifre ve kullanıcı adını bilgisayara kayıt eder.
+
 Mevcut projenizin dosya yoluna giriniz.
 
 ```bash
