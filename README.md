@@ -58,27 +58,7 @@ npm install pm2 -g
 pm2 start index.js
 ```
 
-## Nginx ve Reverse Proxy
+## Nginx, Domain ve SSL
+https://docs.google.com/document/d/1jlJm0P5PS6XBRrtdsCQfr2UJuwGyAjmV8FZU9UJcNzA/edit?usp=sharing
 
-[NGNİX KURULUM](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
 
-cd etc/nginx/sites-enabled/ dizinindeki default dosyamızı aşağıdaki gibi yapılandırıyoruz.  Nginx’i yeniden başlatmayı unutmayalım.
-
-```bash
-upstream coreapp {
-    server localhost:5000;
-    server localhost:5001;
-    server localhost:5002;
-}
-server {
-    listen 80;
- 
-        location / {
-            proxy_pass http://coreapp;
-        }
-}
-```
-
-```bash
- service nginx restart
-```
