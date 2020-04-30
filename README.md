@@ -12,7 +12,7 @@ Birinci yöntem ile deploy key oluşturarak kullanıcı bağımsız clone ve pul
 
 [1.Yöntem](https://gist.github.com/zhujunsan/a0becf82ade50ed06115)
 
-2. Yöntem
+2.Yöntem
 Mevcut projenizin dosya yoluna giriniz.
 
 ```bash
